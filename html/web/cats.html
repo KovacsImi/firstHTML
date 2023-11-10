@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cats</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+
+<div style="text-align:center">
+    <h2>Cat finder</h2>
+    <p>Choose your favourite cat!</p>
+</div>
+<header><a href="index.html">Back to the homepage</a></header>
+<!-- The four columns -->
+<div class="row">
+    <div class="column gallery">
+        <img src="/resources/cat_in_the_bad.jpg" alt="Rozsda" style="width:50%" onclick="myFunction(this);">
+        <h2>Rozsda</h2>
+        <div class="desc">A beautiful and friendly rusty cat.</div>
+    </div>
+    <div class="column gallery">
+        <img src="/resources/curious_cat.jpg" alt="Horzsa" style="width:50%" onclick="myFunction(this);">
+        <h2>Horzsa</h2>
+        <div class="desc">Definitely not the same cat as the last one!</div>
+    </div>
+    <div class="column gallery">
+        <img src="/resources/porzsa.jpg" alt="Porzsa" style="width:75%" onclick="myFunction(this);">
+        <h2>Porzsa</h2>
+        <div class="desc">Definitely not the same cat as the other two!</div>
+    </div>
+    <div class="column">
+        <img src="img_lights.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+</div>
+
+<div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:50%">
+    <div id="imgtext"></div>
+</div>
+
+</body>
+</html>
